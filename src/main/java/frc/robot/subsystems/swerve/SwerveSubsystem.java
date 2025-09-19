@@ -98,7 +98,7 @@ public class SwerveSubsystem extends SubsystemBase {
                 .driveMotorID(1)
                 .angleMotorID(2)
                 .absoluteEncoderPort(0)
-                .angleOffset(49)
+                .angleOffset(89.5)
                 .x(0.5)
                 .y(0.5);
 
@@ -114,7 +114,7 @@ public class SwerveSubsystem extends SubsystemBase {
                 .driveMotorID(5)
                 .angleMotorID(6)
                 .absoluteEncoderPort(2)
-                .angleOffset(89.5)
+                .angleOffset(49)
                 .x(-0.5)
                 .y(0.5);
 

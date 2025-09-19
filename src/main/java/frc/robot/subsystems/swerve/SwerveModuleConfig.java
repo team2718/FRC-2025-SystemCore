@@ -7,6 +7,7 @@ public class SwerveModuleConfig {
     public double angleOffset;
     public double x;
     public double y;
+    public boolean invertAbsoluteEncoder = false;
 
     /**
      * Represents the configuration for a swerve module in the robot's drivetrain.
@@ -79,6 +80,17 @@ public class SwerveModuleConfig {
      */
     public SwerveModuleConfig y(double y) {
         this.y = y;
+        return this;
+    }
+
+    /**
+     * Sets whether to invert the absolute encoder reading.
+     *
+     * @param invertAbsoluteEncoder True to invert the absolute encoder, false otherwise.
+     * @return The current instance of {@code SwerveModuleConfig} for method chaining.
+     */
+    public SwerveModuleConfig invertAbsoluteEncoder(boolean invertAbsoluteEncoder) {
+        this.invertAbsoluteEncoder = invertAbsoluteEncoder;
         return this;
     }
 }
